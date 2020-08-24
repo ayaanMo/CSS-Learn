@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的元素显示模式</title>
+    <style>
+        /* 元素的显示模式就是元素(标签)以什么方式进行显示,比如<div>自己独占一行，一行可以放多个<span> */
+        /* HTML 元素分为块元素和行内元素两种类型 */
+        /* 
+            常见的块元素：1.比较霸道自己独占一行；2高度、宽度、外边距和内边距都可以控制；3.宽度默认是容器（父级宽的）的100%；4.是一个容器及盒子，里面可以放行内或者块级元素
+             <h1>~<h6>
+             <p>
+             <div>
+             <ul>
+             <ol>
+             <li>
+             注意：文字类的元素内不能使用块级元素 比如<p>和<h1>~<h6> 标签
+         */
+        .div_block {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        /* 常见的行内元素 :也称之为内联元素;1.相邻的行内元素在一行上，一行可以显示多个；2.高、宽度直接设置无效；3.默认宽度就是它本身内容的宽度；4.行内元素只能容纳文本或其他行内元素
+            <a>
+            <stong>
+            <b>
+            <em>
+            <i>
+            <del>
+            <s>
+            <ins>
+            <u>
+            <span>
+            注意：链接里面不能再放链接；特殊情况链接<a>里面可以放块级元素，但是给<a>转换一下块级模式最安全
+        */
+        .span_inline {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        /* 行内块元素:在行内元素有几个特殊的标签,它们同时具有块元素和行内元素的特点；1.和相邻行内元素(行内块)在一行上，但是他们之前会有空白缝隙，一行可以显示多个；2.默认宽度就是它本身内容的宽度(行内元素特点)；
+           3.高度，行高，外边距以及内边距都可以控制(块级元素特点)
+            <img>
+            <input>
+            <td>
+         */
+        input {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 元素显示模式的转换 */
+        /* 一个模式的元素需要另外一种模式的特性 */
+        /* 转换为块级元素 display:block */
+        .a_block {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: block;
+        }
+
+        .div_inline {
+            background-color: purple;
+            display: inline;
+        }
+
+        .span_inline_block {
+            background-color: salmon;
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块级元素 -->
+    <div class="div_block">比较霸道自己可以独占一行</div>
+    <!-- 行内元素 -->
+    <span class="span_inline">相邻的行内元素在一行上，一行可以显示多个</span>
+    <!-- 行内块元素 -->
+    <br />
+    <input type="text" />
+    <input type="text" />
+    <!-- 元素显示模式的转换 -->
+    <a href="#" class="a_block">元素显示模式转换:转换成块级</a>
+    <a href="#" class="a_block">元素显示模式转换:转换成块级</a>
+    <div class="div_inline">元素显示模式转换:转换成行内</div>
+    <div class="div_inline">元素显示模式转换:转换成行内</div>
+    <span class="span_inline_block">元素显示模式转换:行内块元素</span>
+    <span class="span_inline_block">元素显示模式转换:行内块元素</span>
+</body>
+
+</html>

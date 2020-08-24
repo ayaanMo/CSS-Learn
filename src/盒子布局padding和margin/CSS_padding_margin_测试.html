@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <!-- 
+
+     这两个例子可以看得出来:
+        padding 是用来让某个内容原理边框 并且假如某个盒子设置了准确的高宽 会去撑大盒子模型
+        margin 是用来让一个盒子远离另外一个盒子的
+     -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 198px;
+            height: 198px;
+            border: 1px solid red;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+            border: 1px solid green;
+        }
+
+        .father {
+            width: 198px;
+            height: 198px;
+            border: 1px solid blue;
+        }
+
+        .son {
+            width: 98px;
+            height: 98px;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 98px;
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">123</div>
+    </div>
+    <br />
+    <div class="father">
+        <div class="son">123</div>
+    </div>
+
+</body>
+
+</html>

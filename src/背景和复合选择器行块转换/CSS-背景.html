@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS background</title>
+    <style>
+        /* 
+            1.background-color:设置背景颜色
+            2.background-image:
+                设置背景图片,常见于logo或者一些装饰性的小图片或者是超大的背景图片,有点事非常便于控制位置(精灵图是也是一种运用场景)
+            3.background-repeat:图片平铺no-repeat、repeat、repeat-x、repeat-y 页面元素既可以添加背景颜色也可以添加背景图片，只不过背景图片会压住背景颜色
+            4.background-position:x y 可以使用方位名词(top/center/bottom/left/center/right)或者精确单位
+            5.background-attachment:scroll(默认值) | fixed 背景图像固定  
+            6.背景复合型写法:background:背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置
+            7.background :rgb(0,0,0,0.3) 最后一个值是透明度(取值范围是0~1) 背景颜色半透明 CSS3新增属性 是IE9+版本浏览器才支持的
+         */
+        .bg_c {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .bg_i {
+            width: 300px;
+            height: 300px;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            /* 如果是方位名词 right 和center right 效果是等价跟顺序没有关系 */
+            background-position: center right;
+        }
+
+        h3 {
+            width: 118px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(images/icon.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            text-indent: 1.5em;
+        }
+
+        .bg_po {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-position: 20px center;
+        }
+
+        .bg_transparent {
+            /* 0.5 等同于 .5  */
+            background: rgb(0, 0, 0, .5);
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg_transparent"></div>
+    <div class="bg_po"></div>
+    <h3>成长守护平台</h3>
+    <div class="bg_c">
+
+    </div>
+    <div class="bg_i"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型之边框</title>
+    <style>
+        /* solid实线 */
+        .full_line {
+            width: 300px;
+            height: 200px;
+            /* 边框粗细 */
+            border-width: 2px;
+            /* 边框样式 */
+            border-style: solid;
+            /* 边框颜色 */
+            border-color: black;
+        }
+
+        /* 虚线 */
+        .dashed_line {
+            width: 300px;
+            height: 200px;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: black;
+        }
+
+        /* 点线 */
+        .dotted_line {
+            width: 300px;
+            height: 200px;
+            border-width: 2px;
+            border-style: dotted;
+            border-color: black;
+        }
+
+        .shorthand {
+            width: 300px;
+            height: 200px;
+            /* 简写border: border-width border-style border-color*/
+            border: 10px solid pink;
+        }
+
+        .bearing {
+            width: 300px;
+            height: 200px;
+            border-top: 5px solid red;
+            border-right: 5px solid black;
+            border-bottom: 5px solid skyblue;
+            border-left: 5px solid greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full_line"></div>
+    <div class="dashed_line"></div>
+    <div class="dotted_line"></div>
+    <div class="shorthand"></div>
+    <div class="bearing"></div>
+</body>
+
+</html>

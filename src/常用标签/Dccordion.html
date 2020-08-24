@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手风琴效果</title>
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+.acciodMenu{
+  width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+.acciodMenu h2{
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+.acciodMenu h2 a{
+  position: relative;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: gray;
+  color: #333;
+  border-radius: 6px;
+}
+.acciodMenu h2 a:before{
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid #fff;
+  border-color: #fff transparent transparent;
+}
+.acciodMenu h2:hover a{
+  background-color: #224466;
+  background: -webkit-linear-gradient(top, #336699, #224466);
+  color: #fff;
+}
+
+.acciodMenu p{
+  padding: 0 10px;
+  height: 0;
+  overflow: hidden;
+  font-size: 13px;
+  transition: height 0.4s ease-in;
+}
+
+.acciodMenu h2:target a{
+  background: #224466;
+  background-position: 0 -15px;
+  color: #fff;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.acciodMenu h2:target~p {
+  height: 100px;
+  overflow: auto;
+}
+
+.acciodMenu h2:target a::before{
+  top: 13px;
+  right: 6px;
+  border-color: transparent transparent transparent #fff;
+}
+</style>
+<body>
+  <div class="acciodMenu">
+    <div class="subAcciodMenu">
+      <h2 id="brand"><a href="#brand">brand</a></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis minima in repellat, veniam consequatur hic velit excepturi expedita quae ad dolore culpa eos aperiam eveniet nemo porro consequuntur nihil.</p>
+    </div>
+    <div class="subAcciodMenu">
+      <h2 id="sticky"><a href="#sticky">sticky</a></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis minima in repellat, veniam consequatur hic
+        velit excepturi expedita quae ad dolore culpa eos aperiam eveniet nemo porro consequuntur nihil.</p>
+    </div>
+    <div class="subAcciodMenu">
+      <h2 id="event"><a href="#event">event</a></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis minima in repellat, veniam consequatur hic
+        velit excepturi expedita quae ad dolore culpa eos aperiam eveniet nemo porro consequuntur nihil.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CSS 是层叠样式表(Cascading Style Sheets)的简称 我们称之为CSS样式表或者级联样式表 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 选择器</title>
+    <style>
+        /* 选择器 {样式} */
+        /* 给谁改样式 {改什么样式} */
+        p {
+            color: green;
+            font-size: 12px;
+        }
+
+        div {
+            color: pink;
+            font-size: 14px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        /* 
+            选择器分类:
+                基础选择器:由单个选择器组成
+                    标签选择器(HTML标签名作为选择器)
+                    类选择器(样式点定义,结构类(class)调用,一个或多个,开发最常用)，多类名样式（可以将公共的样式提出一个类）
+                    id选择器(HTML元素以id属性来设置id选择器,样式#定义,结构id调用,只能调用一次,别人切勿使用)
+                    通配符选择器:* 会将页面所有标签的颜色都将改变，通配符选择器不需要调用，自动给所有的元素使用样式
+                复合选择器:
+         */
+        .red_div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .green_div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .font20 {
+            font-size: 20px;
+        }
+
+        #name {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p>CSS 有点意思</p>
+    <p>男生</p>
+    <p>男生</p>
+    <p>男生</p>
+    <div>女生</div>
+    <div>女生</div>
+    <div>女生</div>
+    <ul>
+        <li class="red">冰雨</li>
+        <li class="red">来生缘</li>
+        <li class="green">李香兰</li>
+        <li class="yellow">生僻字</li>
+        <li>江南style</li>
+        <li>稻香</li>
+    </ul>
+    <div class="red_div">红色</div>
+    <div class="green_div">绿色</div>
+    <div class="red_div">红色</div>
+    <!-- 多类名 -->
+    <p class="blue font20">周杰伦</p>
+    <div id="name">迈克尔·杰克逊</div>
+</body>
+
+</html>

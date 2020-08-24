@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Font</title>
+</head>
+<style>
+    /* CSS Fonts(字体属性) */
+    /* 多个字体可以进行逗号隔开,浏览器会根据顺序来匹配你的系统是否带有该字体 */
+    /* 谷歌浏览器默认显示的字体大小是16px,但是尽量使用明确字体大小 */
+    /* 标题标签比较特殊,需要单独指定大小 */
+    /* font-weight的normal等同于数值是400,700等同于bold 范围是100~900*/
+    /* font-style 记住两个属性italic和normal*/
+    h2 {
+        font-family: 'Microsoft YaHei', Tahoma, Arial, 'Hiragino Sans GB';
+        font-size: 20px;
+    }
+
+    p {
+        font-family: 'Microsoft YaHei', Tahoma, Arial, 'Hiragino Sans GB';
+        font-size: 20px;
+    }
+
+    .blod {
+        font-weight: 900;
+    }
+
+    .slope {
+        font-style: italic;
+    }
+
+    .noSlope {
+        font-style: normal;
+    }
+
+    .demo_div {
+        /* font-size: 20px;
+        font-weight: 700;
+        font-family: "Microsoft YaHei";
+        font-style: italic; */
+        /* font:font-style font-weight font-size/line-height font-family; 字体连写是有顺序的，不能随便更换位置*/
+        /* 简写必须要有 font-size和font-family*/
+        font: italic 700 20px 'Microsoft YaHei'
+    }
+</style>
+
+<body>
+    <h2>咏鹅</h2>
+    <em class="noSlope">骆宾王</em>
+    <p class="blod">鹅鹅鹅</p>
+    <p class="slope">曲项向天歌</p>
+    <p>白毛浮绿水</p>
+    <p>红掌拨清波</p>
+    <div class="demo_div">三生三世十里桃花,一心一意百行代码</div>
+</body>
+
+</html>

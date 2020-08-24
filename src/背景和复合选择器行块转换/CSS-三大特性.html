@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性</title>
+    <style>
+        /* 
+          层叠性:相同选择器给设置相同的样式,此时一个样式就会覆盖(层叠)另一个冲突样式.层叠性主要解决样式冲突问题
+            样式冲突,遵循的原则就是就近原则,哪个样式离结构近，就执行哪个样式
+          继承性:子标签会继承父标签的某些样式
+              恰当的使用继承可以简化代码,降低CSS样式的复杂性
+              子元素可以继承父元素的样式(text-,font-,line-这些元素开头的可以继承，以及color属性)
+          优先级:当同一个元素指定多个选择器,就会有优先级的产生
+               选择器相同,则执行层叠性
+               选择器不同,则根据选择器的权重执行
+               !important(无穷大) > 行内样式(1,0,0,0) >ID选择器(0,1,0,0)>类选择器、伪类选择器(0,0,1,0)>元素选择器(0,0,0,1)>通配符/继承(0,0,0,0)
+               a链接有一个默认浏览器样式 不会去继承父级样式
+               权重叠加:权重虽然会有叠加 但是不会有进位
+         */
+        div {
+            color: skyblue;
+        }
+
+        div {
+            color: red;
+        }
+
+        .div_extends {
+            color: skyblue;
+        }
+
+        body {
+            /* 不带单位指的是倍数 */
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+
+        div {
+            /* body设置的list-style: 1.5;指的是当前文字的大小的1.5倍 */
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        #test {
+            color: red;
+        }
+
+        .demo {
+            color: yellow;
+        }
+
+        span {
+            color: green !important;
+        }
+
+        ol li {
+            color: red;
+        }
+
+        li {
+            color: green;
+        }
+
+        .nav li {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>长江后浪推前浪,前浪死在沙滩上</div>
+    <div class="div_extends">
+        <p>
+            龙生龙,凤生凤,老鼠生的孩子会打洞
+        </p>
+    </div>
+    <ul>
+        <li>
+            我没有指定文字大小
+        </li>
+    </ul>
+    <span id="test" class="demo">CSS样式优先级</span>
+    <ol class="nav">
+        <li>大猪蹄子</li>
+        <li>大肘子</li>
+        <li>猪尾巴</li>
+    </ol>
+</body>
+
+</html>

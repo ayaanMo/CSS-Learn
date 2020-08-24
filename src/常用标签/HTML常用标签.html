@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--标题标签-->
+    <h1 id="live">h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <!--段落标签和换行标签-->
+    <p>段落</p>
+    换行<br />
+    <!--文本格式化标签-->
+    <strong>加粗strong</strong><b>加粗b</b>
+    <em>倾斜em</em><i>倾斜i</i>
+    <del>删除线del</del><s>删除线s</s>
+    <ins>下划线ins</ins><u>下划线u</u>
+    <!--容器标签或者盒子标签,没有语义的-->
+    <div>div一行只能放一个div</div>
+    <span>span一行可以放多个span</span>
+    <!--图像标签-->
+    <br />
+    <img src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg" width="160" />
+    <!--超链接标签-->
+    <br />
+    <a href="https://www.baidu.com/" target="_self">百度</a>
+    <a href="https://www.qq.com/" target="_blank">腾讯</a>
+    <a href="#live">锚点链接</a>
+    <br />
+    <!-- 特殊字符 -->
+    <!-- &nbsp; 空格 -->
+    讲&nbsp;&nbsp;&nbsp;究
+    <!-- &lt;小于  &gt;大于 -->
+    &lt;P&gt;
+    <!-- table -->
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>电话</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>1</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>2</td>
+                <td>456</td>
+            </tr>
+            <tr>
+                <td>王二麻子</td>
+                <td>3</td>
+                <td>789</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 合并单元格 跨行合并 rowspan="合并单元格的个数" colspan="跨列合并的个数" 跨行:最上侧单元格为目标单元格   跨列:最左侧单元格为目标单元格-->
+    <table border="1" cellpadding="0" cellspacing="0" width="500" height="250">
+        <tbody>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 无序列表 ul-->
+    <h4>最臭的食物</h4>
+    <ul>
+        <li>臭豆腐</li>
+        <li>榴莲</li>
+        <li>螺蛳粉</li>
+        <li>鲱鱼罐头</li>
+    </ul>
+    <!-- 有序列表 ol -->
+    <h4>小说点击数</h4>
+    <ol>
+        <li>盘龙</li>
+        <li>凡人修仙传</li>
+        <li>元尊</li>
+    </ol>
+    <!-- 自定义列表 dl-->
+    <dl>
+        <dt>关注我们</dt>
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+    </dl>
+    <!-- 常用表单组件 name和value是回传值的时候用的-->
+    <form>
+        <!-- maxlength 输入最大值 正整数-->
+        <label for="text">用户名:</label> <input type="text" maxlength="6" placeholder="请输入用户名" id="text" />
+        <br />
+        密码:<input type="password" placeholder="请输入密码" />
+        <br />
+        <!-- checked 针对单选和复选按钮的,可以默认选中 -->
+        性别:男 <input type="radio" name="sex" checked="checked" /> 女 <input type="radio" name="sex" />
+        <br />
+        爱好:篮球 <input type="checkbox" name="hobby" checked="checked" /> 羽毛球 <input type="checkbox" name="hobby" /> 足球
+        <input type="checkbox" name="hobby" checked="checked" />
+        <br />
+        <input type="submit" value="免费注册" />
+        <input type="reset" value="重置" />
+        <br />
+        <input type="button" value="获取短信验证码" />
+        <br />
+        <input type="file" />
+        <br />
+        <label>技能:</label><select>
+            <option>React</option>
+            <option>Vue</option>
+            <option selected="selected">Angular</option>
+        </select>
+        <br />
+        <!-- cols 每行中的字符数 rows 显示的行数 -->
+        <label>自我介绍:</label><textarea placeholder="填写50字以上的介绍"></textarea>
+    </form>
+
+</body>
+
+</html>

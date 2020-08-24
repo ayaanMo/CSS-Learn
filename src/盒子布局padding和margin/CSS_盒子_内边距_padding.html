@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子-内边距</title>
+    <style>
+        /* 内边距会增加盒子的本身大小 如果要保证盒子的大小不变  所以要减去上右下左的内边距 */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        .padding {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 5px 10px 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content
+    </div>
+    <p>
+        盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content
+    </p>
+    <div class="padding">
+        盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content盒子内容content
+    </div>
+</body>
+
+</html>
