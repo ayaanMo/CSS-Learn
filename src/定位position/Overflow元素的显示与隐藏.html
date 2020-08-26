@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow控制溢出部分显示隐藏</title>
+    <style>
+        /* 内容溢出隐藏 */
+        .peppa-hidden {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 100px auto;
+        }
+
+        /* 内容溢出部分出现滚动条，并且不溢出也会有滚动条 */
+        .peppa-scroll {
+            overflow: scroll;
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 100px auto;
+        }
+
+        /* 内容溢出部分出现滚动条，不溢出不会有滚动条 */
+        .peppa-auto {
+            overflow: auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="peppa-hidden">
+        《小猪佩奇》 ,又名《粉红猪小妹》 (台湾名为粉红猪) ,英文名为《Peppa
+        Pig》 ,是由英国人阿斯特利(Astley)、贝克(Baker)
+        、戴维斯(Davis)创作、导演和制英国学前电视动画片,也是历年来最具潜力的学前儿童品牌。故事围绕小猪佩奇与家人的愉快经而有趣,藉此宣扬传统家庭观念与友情,鼓励小朋友们体验生活。
+    </div>
+    <div class="peppa-scroll">
+        《小猪佩奇》 ,又名《粉红猪小妹》 (台湾名为粉红猪) ,英文名为《Peppa
+        Pig》 ,是由英国人阿斯特利(Astley)、贝克(Baker)
+        、戴维斯(Davis)创作、导演和制英国学前电视动画片,也是历年来最具潜力的学前儿童品牌。故事围绕小猪佩奇与家人的愉快经而有趣,藉此宣扬传统家庭观念与友情,鼓励小朋友们体验生活。
+    </div>
+    <div class="peppa-auto">
+        《小猪佩奇》 ,又名《粉红猪小妹》 (台湾名为粉红猪) ,英文名为《Peppa
+        Pig》 ,是由英国人阿斯特利(Astley)、贝克(Baker)
+        、戴维斯(Davis)创作、导演和制英国学前电视动画片,也是历年来最具潜力的学前儿童品牌。故事围绕小猪佩奇与家人的愉快经而有趣,藉此宣扬传统家庭观念与友情,鼓励小朋友们体验生活。
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位和浮动标签的特殊性</title>
+    <style>
+        /* 设置了相对定位的元素是不会脱标 所以行内元素设置高宽没效果 */
+        .span01 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        /* 设置了绝对定位或者固定定位的元素是会脱标 所以行内元素设置高宽有效果 */
+        .span02 {
+            position: absolute;
+            top: 110px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .span03 {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        /* 设置了绝对定位或者固定定位的元素是会脱标 块级元素要是没有设置高和宽的话默认是内容的大小 */
+        .div01 {
+            position: absolute;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="span01">123</span>
+    <span class="span02">123</span>
+    <span class="span03">123</span>
+    <div class="div01">123</div>
+</body>
+
+</html>

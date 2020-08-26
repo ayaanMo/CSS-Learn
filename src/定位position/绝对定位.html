@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .demo01 {
+            position: absolute;
+            top: 0px;
+            right: 500px;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+
+        .demo02 {
+            height: 300px;
+            width: 300px;
+            background-color: skyblue;
+        }
+
+        .demo02-01 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+        }
+
+        .demo03 {
+            position: relative;
+            top: 10px;
+            height: 300px;
+            width: 300px;
+            background-color: black;
+        }
+
+        .demo03-01 {
+            position: absolute;
+            top: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: palegreen;
+        }
+
+        .demo04 {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+
+        .demo04-01 {
+            /* position: relative;
+            top: 30px; */
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+
+        .demo04-01-01 {
+            position: absolute;
+            top: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 没有父级元素的情况 -->
+    <div class="demo01"></div>
+    <!-- 有父级元素情况,但父级没有定位 -->
+    <div class="demo02">
+        <div class="demo02-01"></div>
+    </div>
+    <!-- 有父级元素情况，父级有定位 -->
+    <div class="demo03">
+        <div class="demo03-01"></div>
+    </div>
+    <!-- 有爷爷级定位  父级没有定位 -->
+    <div class="demo04">
+        <div class="demo04-01">
+            <div class="demo04-01-01"></div>
+        </div>
+    </div>
+</body>
+
+</html>

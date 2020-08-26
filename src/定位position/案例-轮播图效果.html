@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图效果</title>
+    <style>
+        /* 1.大盒子大小 520*280 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            padding: 8px;
+            background-color: #fff;
+        }
+
+        .img {
+            width: 520px;
+            height: 280px;
+        }
+
+        /* 并集选择器可以集体声明相同样式 */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 30px;
+            margin-top: -15px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 30px;
+            color: #fff;
+            background: rgb(0, 0, 0, .3);
+        }
+
+        .prev {
+            left: 8px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .next {
+            right: 8px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .prono-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            width: 70px;
+            height: 13px;
+            margin-left: -35px;
+            background: rgb(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+
+        .prono-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin: 3px;
+            background-color: #fff;
+        }
+
+        .prono-nav .selected {
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="images/tb.jpeg" alt="">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <ul class="prono-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

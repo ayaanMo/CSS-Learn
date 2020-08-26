@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位叠放次序(z-index)</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .big {
+            z-index: 1;
+            left: 100px;
+            background-color: red;
+        }
+
+        .middle {
+            z-index: 2;
+            left: 120px;
+            background-color: yellow;
+        }
+
+        .small {
+            left: 140px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box big">big</div>
+    <div class="box middle">middle</div>
+    <div class="box small">small</div>
+</body>
+
+</html>
