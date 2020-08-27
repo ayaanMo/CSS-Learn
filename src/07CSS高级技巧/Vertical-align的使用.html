@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 10px;
+            border: 1px solid pink;
+        }
+
+        .img1 {
+            vertical-align: top;
+        }
+
+        .img2 {
+            vertical-align: middle;
+        }
+
+        .img3 {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 图片底侧空白缝隙解决方案 就是加vertical-align 或者将图片转成块级元素也可以解决 -->
+        <img src="images/ldh.jpeg" alt=""><span>默认基线对齐-abchklz你好123</span>
+    </div>
+    <div class="box">
+        <img src="images/ldh.jpeg" alt="" class="img1"><span>顶线对齐top-abchklz你好123</span>
+    </div>
+    <div class="box">
+        <img src="images/ldh.jpeg" alt="" class="img2"><span>中线对齐middle-abchklz你好123</span>
+    </div>
+    <div class="box">
+        <img src="images/ldh.jpeg" alt="" class="img3"><span>底线对齐bottom-abchklz你好123</span>
+    </div>
+</body>
+
+</html>
