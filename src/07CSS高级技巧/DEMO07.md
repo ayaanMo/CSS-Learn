@@ -39,4 +39,21 @@ CSS高级技巧
         使用场景：经常用于设置图片或者编导（行内款元素）和文字垂直对齐；用于设置一个元素的垂直对齐方式，但是它只针对于行内元素或者行内块元素有效
         语法：vertical-align:baseline(默认。元素放置在父元素的基线上)/top(把元素的顶端与行中最高元素的顶端对齐)/middle(把元素放置在父元素的中部)/bottom(把父元素的顶端与行中最低的元素的顶端对齐)
     6.溢出的文字省略号显示
+        单行文字溢出省略号溢出：
+          * 先强制一行内显示文本(white-space:nowrap(默认是normal 自动换行))
+          * 超出部分的文本隐藏 overflow:hidden
+          * 文本用省略号替代超出部分 text-overflow:ellipsis
+        多行文字溢出省略号溢出：（多行文本溢出显示省略号，有较大的兼容性问题，适合于webkit浏览器或移动端）
+          * overflow: hidden;
+          * text-overflow: ellipsis;
+            /,弹性伸缩盒子横型显示*/
+          * display: -webkit-box;
+            /*限制在一个块元素显示的文本的行数*/
+          * -webkit-line-clamp: 2
+            /*设置或检索伸缩盒对象的子元素的排列方式
+          * -webkit-box-orient: vertical;
     7.常见布局技巧
+        * margin负值的运用
+        * 文字围绕浮动元素
+        * 行内块的巧妙运用
+        * CSS三角强化

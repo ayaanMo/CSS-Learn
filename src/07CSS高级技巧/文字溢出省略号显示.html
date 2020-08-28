@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字溢出省略号显示</title>
+    <style>
+        .text {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 100px auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .textarea {
+            width: 150px;
+            height: 65px;
+            background-color: pink;
+            margin: 100px auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">此处文字太多，想看清点进去再看</div>
+    <div class="textarea">啥也不说，此处省略一万行，啥也不说，此处省略一万行，啥也不说，此处省略一万行</div>
+</body>
+
+</html>

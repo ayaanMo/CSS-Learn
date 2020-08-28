@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值的运用</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 200px;
+            /* 利用html运行是顺序执行 做的边线叠压效果 */
+            margin-left: -1px;
+            border: 1px solid;
+            list-style: none;
+        }
+
+        /* 如果普通盒子没有定位，则添加相对定位即可 */
+        /* ul li:hover {
+
+            position: relative;
+            border: 1px solid skyblue;
+        } */
+        /* 如果普通盒子有定位了，则可以添加z-index把盒子层级添加上来 */
+        ul li:hover {
+            z-index: 1;
+            border: 1px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

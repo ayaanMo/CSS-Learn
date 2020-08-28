@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三角强化</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 150px;
+            height: 20px;
+            margin: 100px auto;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            border: 1px solid red;
+        }
+
+        .price {
+            float: left;
+            position: relative;
+            width: 60%;
+            height: 100%;
+            color: #fff;
+            font-weight: 700;
+            background-color: red;
+        }
+
+        .discount {
+            float: left;
+            width: 40%;
+            height: 100%;
+            color: #ccc;
+            text-decoration: line-through;
+        }
+
+        .triangle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom-color: #fff;
+            border-right-color: #fff;
+        }
+
+        .test {
+            width: 0;
+            height: 0;
+            border-top: 100px solid yellow;
+            border-right: 100px solid red;
+            border-bottom: 100px solid blue;
+            border-left: 100px solid green;
+            /*1.只保留右边的边框有i色*/
+            /* border-color: transparent 口red transparent transparent; */
+            /* 2,样式都是solid */
+            /* border-style: solid; */
+            /*3,上边框宽度要大, 右边框宽度稍小,其余的边框读为e*/
+            /* border-width: 100px 50px 0 0; */
+
+        }
+
+        .price01 {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 200px auto;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .ms {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .ms i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+
+        }
+
+        .discount01 {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test"></div>
+    <div class="box">
+        <div class="price">
+            <span>¥2099.00</span>
+            <div class="triangle"></div>
+        </div>
+        <div class="discount"><span>¥2649.00</span></div>
+    </div>
+    <div class="price01">
+        <span class="ms">
+            ¥2099.00
+            <i></i>
+        </span>
+        <span class="discount01">¥2649.00</span>
+    </div>
+</body>
+
+</html>
