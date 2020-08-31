@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3新特性</title>
+    <style>
+        /* 必须是input 但是同时具有value这个属性 选择这个元素 [] */
+        input[value] {
+            color: pink;
+        }
+
+        input[type="password"] {
+            color: pink;
+        }
+
+        div[class^=icon] {
+            color: red;
+        }
+
+        section[class$=data] {
+            color: blue;
+        }
+
+        p[class*=d] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="">
+
+    <!-- 1.利用属性选择器就可以不用借助于类选择器或id选择器 -->
+    <input type="text" name="" id="" value="请输入用户名">
+    <!-- 2.属性选择器还可以选择属性=值的某些元素 重点 -->
+    <input type="password" name="" id="">
+    <!-- 3.属性选择器可以选择属性值以什么开头的某些元素 【^】以什么开头-->
+    <div class="icon1">icon1</div>
+    <div class="icon2">icon2</div>
+    <div class="icon3">icon3</div>
+    <div class="icon4">icon4</div>
+    <div>我是打酱油的</div>
+    <!-- 4.属性选择器可以选择属性值以什么结尾的某些元素 【$】以什么结尾-->
+    <section class="icon1-data">我是安其拉</section>
+    <section class="icon2-data">我是哥斯拉</section>
+    <section class="icon3-ico">那我是谁</section>
+    <!-- 5.属性选择器可以选择属性值包含的某些元素 【*】任一的意思-->
+    <p class="abcd1">周润发</p>
+    <p class="abcd2">周杰伦</p>
+    <p class="abcd3">周周</p>
+    <p class="abce4">我是谁</p>
+</body>
+
+</html>

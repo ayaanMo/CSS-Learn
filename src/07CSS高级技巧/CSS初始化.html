@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS初始化</title>
     <style>
+        /* 把我们所有标签的内外标签清零 */
         * {
             margin: 0;
             padding: 0
         }
 
+        /* 倾斜的文字不倾斜 */
         em,
         i {
             font-style: normal
         }
 
+        /* 去掉小li的小圆点 */
         li {
             list-style: none
         }
 
+        /* border 0 照顾低版本浏览器 如果图片外面包含了链接会有边框的问题 */
         img {
             border: 0;
+            /* 取消图片底下有空白缝隙的问题 */
             vertical-align: middle
         }
 
+        /* 当我们进过button按钮的时候 变成小手 */
         button {
             cursor: pointer
         }
@@ -40,10 +46,12 @@
 
         button,
         input {
+            /* Unicode编码字体(好多浏览器不识别汉字) 黑体 \9ED1\4F53 宋体 \5B8B\4F53 微软雅黑 \5FAE\8F6F\96C5\9ED1*/
             font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
         }
 
         body {
+            /* CSS3属性 抗锯齿性 让文字更加清晰 */
             -webkit-font-smoothing: antialiased;
             background-color: #fff;
             font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
@@ -55,6 +63,7 @@
             display: none
         }
 
+        /* 清除浮动 */
         .clearfix:after {
             visibility: hidden;
             clear: both;
