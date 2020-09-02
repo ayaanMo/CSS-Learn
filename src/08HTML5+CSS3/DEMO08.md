@@ -60,3 +60,29 @@ CSS3新增属性:
           4. before和after必须有content属性
           5. before在父元素内容的前面创建元素，after在父元素内容的后面插入元素
           6. 伪元素选择器和标签选择器权重一样，都为1
+    * 盒子模型 border-box
+        CSS3中可以通过box-sizing来制定盒模型。有两个值：即可指定为content-box，border-box
+        可以分成两种情况：
+            1.box-sizeing-conten 盒子大小为width+padding+border（以前默认的）
+            2.box-sizing-border-box 盒子大小为width 那padding和border就不会成大盒子了（前提padding和border不会超过width的宽度）
+    * CSS3滤镜filter
+        filter CSS属性将模糊或颜色偏移等图形效果应用于元素
+        语法：filter：函数(); 例如：filter:blur(5px);blur模糊处理 数值越大越模糊
+    * CSS3 calc函数：
+        calc()此CSS函数让你再声明CSS属性值时执行一些计算
+        例如：width:calc(100% - 80px) 括号里面可以使用 + - * / 运算符前后需要加空格
+    * CSS3过渡
+        过渡transition 不适用Flash东华或js的情况下就可以跟元素添加效果，主要效果是当元素从一种样式变换为另一种样式时添加效果；
+        过渡动画:是从一个状态渐渐的过渡到另外一个状态 我们经常跟:hover一起搭配使用
+        语法：transition：过渡的属性 花费时间 运动曲线 何时开始
+            1.属性：想要变化的css属性，宽度高度 背景颜色 内外边距都可以。如果想要所有属性都变化过渡写一个all就可以
+            2.花费时间：单位是秒（必须写单位）
+            3.运动曲线：默认是ease（可以省略）
+            4.何时开始：单位是秒（必须写单位） 可以设置延迟触发时间 默认是0s（可以省略）
+        口诀：谁要过渡给谁加
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素使用场景-配合文字图标</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('../icomoon/fonts/icomoon.eot?my72l8');
+            src: url('../icomoon/fonts/icomoon.eot?my72l8#iefix') format('embedded-opentype'),
+                url('../icomoon/fonts/icomoon.ttf?my72l8') format('truetype'),
+                url('../icomoon/fonts/icomoon.woff?my72l8') format('woff'),
+                url('../icomoon/fonts/icomoon.svg?my72l8#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            border: 1px solid red;
+        }
+
+        div::after {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            content: "\e901";
+            font-family: 'icomoon';
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
