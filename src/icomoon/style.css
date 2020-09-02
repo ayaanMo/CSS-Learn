@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?my72l8');
-  src:  url('fonts/icomoon.eot?my72l8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?my72l8') format('truetype'),
-    url('fonts/icomoon.woff?my72l8') format('woff'),
-    url('fonts/icomoon.svg?my72l8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4de51i');
+  src:  url('fonts/icomoon.eot?4de51i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4de51i') format('truetype'),
+    url('fonts/icomoon.woff?4de51i') format('woff'),
+    url('fonts/icomoon.svg?4de51i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -54,4 +54,16 @@
 }
 .icon-forward-step:before {
   content: "\e909";
+}
+.icon-gift:before {
+  content: "\e90a";
+}
+.icon-music-playlist:before {
+  content: "\e90b";
+}
+.icon-shopping-cart:before {
+  content: "\e90c";
+}
+.icon-target:before {
+  content: "\e90d";
 }

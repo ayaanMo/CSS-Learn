@@ -40,7 +40,9 @@ a:hover {
 button,
 input {
     /* Unicode编码字体(好多浏览器不识别汉字) 黑体 \9ED1\4F53 宋体 \5B8B\4F53 微软雅黑 \5FAE\8F6F\96C5\9ED1*/
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border:0;
+    outline: none;
 }
 
 body {

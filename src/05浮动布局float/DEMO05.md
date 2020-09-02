@@ -47,9 +47,9 @@
       切片切图：切片工具-->选择切片范围-->导出-->存储为Web所用格式(旧版)-->选择JPG格式或者png-->存储（如果想透明的话 直接把背景隐藏然后再切片）
       PS插件切图(cutter man):cutter man 快速切图(http://www.cutterman.cn/zh/cutterman)
 CSS 属性书写顺序:建议遵循以下顺序
-    1.布局定位属性:display/position/float/clear/visibilly/overflow(建议display第一个写，毕竟关系到模式)
+    1.布局定位属性:display/position/float/clear/visibility/overflow(建议display第一个写，毕竟关系到模式)
     2.自身属性:width/height/margin/padding/border/background
-    3.文本属性:color/font/text-decaration/text-align/vertical-align/white-space/break-word
+    3.文本属性:color/font/text-decoration/text-align/vertical-align/white-space/break-word
     4.其他属性(CSS3):content/cursor/border-radius/box-shadow/text-shadow/background:linear-gradient...
 页面布局的整体思路:
     1.必须确定页面的版心（可视区，宽度），我们可以通过测量获得；
