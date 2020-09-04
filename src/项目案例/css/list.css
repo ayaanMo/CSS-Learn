@@ -46,15 +46,85 @@
 .sk_hd{
     height: 120px;
 }
+.sk_container{
+    margin-bottom: 300px;
+}
 .sk_container img{
     height: 100%;
 }
 .sk_bd ul li{
     float: left;
+    position: relative;
     width: 290px;
     height: 460px;
+    margin-right: 12px;
+    border: 1px solid transparent;
 }
-.sk_bd ul li a img{
-    width: 166px;
-    height: 254px;
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #e12228;
+}
+.sk_bd .desc{
+    margin-left: 15px;
+}
+.sk_bd ul li a div img{
+    width: 100%;
+    height: 277px;
+}
+.sk_bd ul li a div p{
+    font-size: 14px;
+    color: #666;
+}
+.sk_bd ul li a div .discount{
+    height: 30px;
+    margin-top: 10px;
+} 
+.sk_bd ul li a div .discount span:nth-child(1){
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.sk_bd ul li a div .discount span:nth-child(2){
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.sk_bd ul li .snap{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background-color: #b1191a;
+}
+.sk_bd ul li .desc .price{
+    margin-top: 10px;
+    height: 28px;
+    font-size: 14px;
+}
+.sk_bd ul li .desc .price p{
+    float: left;
+    text-align: center;
+}
+.sk_bd ul li .desc .price .out_box{
+    float: left;
+    width: 132px;
+    height: 14px;
+    margin: 2px 12px 0;
+    padding: 1px;
+    border: 1px solid #ed282e;
+    border-radius: 7px;
+}
+.sk_bd ul li .desc .price .out_box .in_box{
+    width: 70%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #ed282e;
 }
