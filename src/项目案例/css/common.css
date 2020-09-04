@@ -152,11 +152,11 @@
     text-align: center;
     cursor: pointer;
 }
-.dropdown .dt:hover ~.dd{
+/* .dropdown .dt:hover ~.dd{
     display: block;
-}
+} */
 .dropdown .dd{
-    display: none;
+    /* display: none; */
     width: 210px;
     height: 465px;
     background-color: #c81623;
@@ -244,4 +244,36 @@
 .service_txt p{
     font-size:12px;
     
+}
+.mod_help{
+    height: 185px;
+    border-bottom: 1px solid #ededed;
+    padding-top:20px;
+    padding-left: 50px;
+}
+.mod_help dl{
+    float: left;
+    width: 200px;
+}
+.mod_help dl:last-child{
+    width: 90px;
+    text-align: center;
+}
+.mod_help dl dt{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.mod_copyright{
+    padding-top:20px;
+    text-align: center;
+}
+.mod_copyright .links{
+    margin-bottom: 15px;
+}
+.mod_copyright .links a{
+    margin:0 3px;
+}
+.mod_copyright .copyright{
+    line-height: 20px;
 }
