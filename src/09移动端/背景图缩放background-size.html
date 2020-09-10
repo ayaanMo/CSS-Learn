@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图缩放background-size</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url(images/pic2.png) no-repeat;
+        }
+
+        .info2 {
+            /* background：图片宽度 图片高度 */
+            background-size: 500px 200px;
+        }
+
+        .info2 {
+            /* background：只写一个参数肯定是宽度 高度省略了 会等比缩放 */
+            background-size: 500px;
+        }
+
+        .info3 {
+            /* cover 等比例拉伸 要完全覆盖盒子，可能有部分背景图片显示不全 */
+            background-size: cover;
+        }
+
+        .info4 {
+            /* contain  高度和宽度是等比例拉伸，当高度或者宽度铺满div盒子的时候 不再进行拉伸了 ，可能会有空白部分 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info1"></div>
+    <div class="info2"></div>
+    <div class="info3"></div>
+    <div class="info4"></div>
+</body>
+
+</html>

@@ -12,7 +12,7 @@ HTML5语义性标签
     * 移动端更喜欢这些标签
     * HTML5还增加了很多其他标签
 HTML5新增标签
-    * 视频<video>  支持三种格式 MP4、WebM、Ogg
+    * 视频<video>  支持三种格式 MP4、WebM（IE不支持，Safari不支持）、Ogg（IE不支持，Safari不支持）
         <video src="文件地址" controls="controls">
         常用属性：
             autoplay:自动播放(chrome一般是禁用这个功能的);
@@ -21,7 +21,7 @@ HTML5新增标签
             loop：播放完是继续播放视频，循环播放;
             preload:auto(预先加载视频) none(不应加载视频) 规定是否预加载视频，如果有了autoplay，就忽略该属性
             poster:加载等待的图画图片
-    * 音频<audio> 支持三种格式 MP3、Wav、Ogg
+    * 音频<audio> 支持三种格式 MP3、WavOgg（IE不支持）、Ogg（IE不支持，Safari不支持）
         <audio src="文档地址" controls="controls"></audio>
         常用属性:
             autoplay:音频就绪后会自动播放
