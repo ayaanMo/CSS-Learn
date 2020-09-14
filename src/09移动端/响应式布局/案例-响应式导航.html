@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-响应式导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+
+        .container ul li {
+            float: left;
+            width: 93.75px;
+            height: 30px;
+            color: #fff;
+            background-color: green;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width:767px) {
+            .container {
+                width: 100%;
+            }
+
+            .container ul li {
+                width: 33.33%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>测试1</li>
+            <li>测试2</li>
+            <li>测试3</li>
+            <li>测试4</li>
+            <li>测试5</li>
+            <li>测试6</li>
+            <li>测试7</li>
+            <li>测试8</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem单位</title>
+    <style>
+        html {
+            font-size: 14px;
+        }
+
+        div {
+            font-size: 10px;
+        }
+
+        p {
+            /* em 是相对于父级的font-size而言的 */
+            width: 12em;
+            height: 12em;
+            background-color: pink;
+        }
+
+        h1 {
+            /* rem 是相对于根标签html的font-size而言的 */
+            width: 10rem;
+            height: 10rem;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+        <h1></h1>
+    </div>
+</body>
+
+</html>
