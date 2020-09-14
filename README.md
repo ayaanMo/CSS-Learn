@@ -1,3 +1,4 @@
+![avatar](./HTML+CSS.png)
 # 代码规范
 
 ## 1. 概述
