@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合选择器</title>
+  <style>
+    .offSpring ol li {
+      background-color: pink;
+      height: 25px;
+      width: 25px;
+    }
+
+    .child>a {
+      color: pink;
+      text-decoration: none;
+    }
+
+    .union_div,
+    .union_p,
+    .union_a {
+      color: pink;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 后代选择器 -->
+  <div class="offSpring">
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ol>
+  </div>
+  <!-- 子代选择器  -->
+  <div class="child">
+    <a href="#">子代选择器1</a>
+    <a href="#">子代选择器2</a>
+    <a href="#">子代选择器3</a>
+  </div>
+  <!-- 并集选择器 -->
+  <div class="union_div">并集选择器div</div>
+  <p class="union_p">并集选择器p</p>
+  <a href="#" class="union_a">并集选择器a</a>
+</body>
+
+</html>
