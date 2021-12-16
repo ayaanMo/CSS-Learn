@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
         /* 后代选择器 元素1(父级标签(可以是标签选择器、类选择器、id选择器))  元素2(子集标签) ... {样式申明}*/
         ol li div {
             color: pink;
@@ -76,71 +76,71 @@
             background-color: red;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <!-- 后代选择器 -->
-    <ol>
-        <li>
-            <div>我是li的孩子1</div>
-        </li>
-        <li>我是ol的孩子2</li>
-        <li>我是ol的孩子3</li>
-    </ol>
-    <ul>
-        <li>我是ul的孩子1</li>
-        <li>我是ul的孩子2</li>
-        <li>我是ul的孩子3</li>
-    </ul>
-    <ul class="nav">
-        <li>我是ul的孩子1</li>
-        <li>我是ul的孩子2</li>
-        <li><a href="#">我是小a</a></li>
-    </ul>
-    <div class="nav_div">
+    <body>
+        <!-- 后代选择器 -->
+        <ol>
+            <li>
+                <div>我是li的孩子1</div>
+            </li>
+            <li>我是ol的孩子2</li>
+            <li>我是ol的孩子3</li>
+        </ol>
         <ul>
-            <li><a href="#">百度</a></li>
-            <li><a href="#">谷歌</a></li>
+            <li>我是ul的孩子1</li>
+            <li>我是ul的孩子2</li>
+            <li>我是ul的孩子3</li>
         </ul>
-    </div>
-    <!-- 子元素选择器 -->
-
-    <div>
-        <a href="#">我是儿子</a>
-        <p><a href="#">我是孙子</a></p>
-    </div>
-    <div class="hot">
-        <a href="#">大肘子</a>
-        <ul>
-            <li><a href="#">猪头</a></li>
-            <li><a href="#">猪尾巴</a></li>
+        <ul class="nav">
+            <li>我是ul的孩子1</li>
+            <li>我是ul的孩子2</li>
+            <li><a href="#">我是小a</a></li>
         </ul>
-    </div>
-    <!-- 并集选择器 -->
+        <div class="nav_div">
+            <ul>
+                <li><a href="#">百度</a></li>
+                <li><a href="#">谷歌</a></li>
+            </ul>
+        </div>
+        <!-- 子元素选择器 -->
 
-    <div>熊大</div>
-    <p>熊二</p>
-    <span>光头强</span>
-    <ul class="pig">
-        <li>小猪佩奇</li>
-        <li>猪爸爸</li>
-        <li>猪妈妈</li>
-    </ul>
-    <!-- 伪类选择器 -->
-    <!-- 链接伪类选择器 -->
-    <div class="pseudo_class">
-        <a href="#">小猪佩奇</a>
-        <br />
-        <a href="https://www.runoob.com/css/css-pseudo-classes.html">小猪乔治</a>
-        <br />
-        <span>猪爸爸，猪妈妈</span>
-    </div>
-    <!-- focus伪类选择器 -->
-    <span class="input_focus">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </span>
-</body>
+        <div>
+            <a href="#">我是儿子</a>
+            <p><a href="#">我是孙子</a></p>
+        </div>
+        <div class="hot">
+            <a href="#">大肘子</a>
+            <ul>
+                <li><a href="#">猪头</a></li>
+                <li><a href="#">猪尾巴</a></li>
+            </ul>
+        </div>
+        <!-- 并集选择器 -->
+
+        <div>熊大</div>
+        <p>熊二</p>
+        <span>光头强</span>
+        <ul class="pig">
+            <li>小猪佩奇</li>
+            <li>猪爸爸</li>
+            <li>猪妈妈</li>
+        </ul>
+        <!-- 伪类选择器 -->
+        <!-- 链接伪类选择器 -->
+        <div class="pseudo_class">
+            <a href="#">小猪佩奇</a>
+            <br />
+            <a href="https://www.runoob.com/css/css-pseudo-classes.html">小猪乔治</a>
+            <br />
+            <span>猪爸爸，猪妈妈</span>
+        </div>
+        <!-- focus伪类选择器 -->
+        <span class="input_focus">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </span>
+    </body>
 
 </html>
