@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>盒子布局</title>
+        <style>
+            /**
+                1.盒子模型必须需要宽度 左右设置margin设置为auto
+                2.行内和行内块元素将父级元素设置为text-align center  则可以水平居中
+            */
+            /**
+                清楚默认样式表样式少用通配符的模式
+                使用罗列的方式：
+            */
+            body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+                margin:0;
+                padding:0;
+            }
+            .box{
+                width: 900px;
+                height: 200px;
+                margin: 0 auto;
+                background-color: pink;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .triangle{
+                width: 0px;
+                height: 0px;
+                border: 50px solid white;
+                border-top-color: red;
+                border-bottom: none;
+
+            }
+            .circle{
+                width: 200px;
+                height: 200px;
+                border-radius: 10%;
+                border: 1px solid black;
+            }
+            .father{
+                width: 200px;
+                height: 200px;
+                margin-top: 20px;
+                background-color: greenyellow;
+                margin-bottom: 20px;
+                /* 
+                    解决父子级块级元素外边距合并塌陷问题解决方案：
+                        1.跟父级块级元素增加边框
+                        2.跟父级元素增加内边距
+                        3.跟父级元素增加overflow:hidden
+                */
+                /* border: 1px solid transparent; */
+                /* overflow: hidden; */
+                /* padding-top:1px ; */
+            }
+            .son{
+                width: 50px;
+                height: 50px;
+                margin-top: 30px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+        <div class="box">
+            <span>1.盒子模型必须需要宽度 左右设置margin设置为auto
+                2.行内和行内块元素将父级元素设置为text-align center</span>
+        </div>
+        <div class="triangle"></div>
+        <div class="circle"></div>
+
+    </body>
+</html>
