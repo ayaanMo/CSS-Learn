@@ -33,7 +33,12 @@
             height: 300px;
             background-color: black;
         }
-
+        /* 
+            none:允许两边都可以有浮动对象
+            both:不允许两边都不能有浮动对象
+            left:不允许左边不能有浮动对象
+            right:不允许右边不能有浮动对象
+        */
         .clear {
             clear: both;
         }
@@ -44,7 +49,7 @@
         <div class="box">
             <div class="damao"></div>
             <div class="ermao"></div>
-            <!-- 新添加的标签必须是块级元素,不能是块级元素 -->
+            <!-- 新添加的标签必须是块级元素,不能是行内元素 -->
             <div class="clear"></div>
         </div>
         <div class="footer"></div>
