@@ -1,14 +1,17 @@
 Flex布局(flexible Box):
+
     用来为盒状迷行提供最大的灵活性，任何一个容器都可以指定flex布局
-    * 当我们为父盒子设置flex布局以后，子元素的float、clear和vertical-align属性将失效
-    * 采用了flex布局的元素，称之为Flex容器，简称容器，它所有子元素自动成为容器成员，称之为Flex项目(flex item)
-    * 就是通过给父盒子添加flex属性，来控制子盒子的位置和排列方式
+
+    - 当我们为父盒子设置flex布局以后，子元素的float、clear和vertical-align属性将失效
+    - 采用了flex布局的元素，称之为Flex容器，简称容器，它所有子元素自动成为容器成员，称之为Flex项目(flex item)
+    - 就是通过给父盒子添加flex属性，来控制子盒子的位置和排列方式
 flex常见属性:
   父级属性:
+
     1.flex-direction:设置主轴的方向
         flex-direction 属性决定主轴的方向(即子元素的排列方向)，默认是row 从左至右
-        row（从左至右）、row-reverse（从左至右）、column（从上至下）、column-reverse（从下至上）
-      注意：主轴和侧轴是回变化的，就看flex-direction设置谁为主轴，剩下的就是侧轴，子元素都是跟着主轴来排列的
+        row（从左至右）、row-reverse（从右至左）、column（从上至下）、column-reverse（从下至上）
+      注意：主轴和侧轴是会变化的，就看flex-direction设置谁为主轴，剩下的就是侧轴，子元素都是跟着主轴来排列的
     2.justify-content:设置主轴上的子元素排列方式
         justify-content 默认值是从头部开始，如果主轴是x轴，则从左至右
         flex-start（默认值是从头部开始，如果主轴是x轴，则从左至右）、flex-end（从尾部开始排列）、center（在主轴居中对齐，如果主轴是x轴则水平居中）、space-around（平分剩余空间）、space-between（先两边贴边再平分剩余空间）
@@ -22,7 +25,9 @@ flex常见属性:
         flex-start（从上到下）、flex-end（从下到上）、center（挤在一起居中）、stretch（拉伸，默认值）
     6.flex-flow:复合属性，相当于同时设置了flex-direction和flex-wrap
         flex-direction:column; flex-wrap:wrap => flex-flow:column wrap;
+
   子项属性:
+
     1.flex子项目占的分数
         语法 子项目{flex:<number>}
     2.align-self控制子项自己在侧轴的排列方式
