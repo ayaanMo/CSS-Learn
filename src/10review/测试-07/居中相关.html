@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居中相关案例</title>
+    <style>
+        .parent_center01 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+
+        .child_center01 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .parent_center02 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+
+        .child_center02 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            margin-top: -12.5px;
+            margin-left: -12.5px;
+            top: 50%;
+            left: 50%;
+            background-color: red;
+
+        }
+
+        .parent_center03 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+
+        .child_center03 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: calc(50% - 12.5px);
+            left: calc(50% - 12.5px);
+            background-color: red;
+        }
+
+        .parent_center04 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+
+        .child_center04 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+        }
+
+        .parent_center05 {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: 1px solid pink;
+        }
+
+        .child_center05 {
+            line-height: inherit;
+            vertical-align: middle;
+            background-color: red;
+        }
+
+        .parent_center06 {
+            display: flex;
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child_center06 {
+            background-color: red;
+        }
+
+        .parent_center07 {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            border: 1px solid pink;
+        }
+
+        .child_center07 {
+            margin: auto;
+            background-color: red;
+        }
+
+        .flex-demo {
+            display: flex;
+            height: 200px;
+            border: 1px solid pink;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flex-demo div {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent_center01">
+        <div class="child_center01">
+
+        </div>
+    </div>
+    <div class="parent_center02">
+        <div class="child_center02">
+
+        </div>
+    </div>
+    <div class="parent_center03">
+        <div class="child_center03">
+
+        </div>
+    </div>
+    <div class="parent_center04">
+        <div class="child_center04">
+            我是transform
+        </div>
+    </div>
+    <div class="parent_center05">
+        <span class="child_center05">child_center05</span>
+    </div>
+    <div class="parent_center06">
+        <div class="child_center06">
+            flex布局(1)
+        </div>
+    </div>
+    <div class="parent_center07">
+        <div class="child_center07">
+            flex布局(2)
+        </div>
+    </div>
+    <div class="flex-demo">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>
