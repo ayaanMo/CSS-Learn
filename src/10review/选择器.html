@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        .box1 span {
+            color: red;
+        }
+
+        .box2>span {
+            color: red;
+        }
+
+        .box5>a {
+            color: red;
+            text-decoration: none;
+        }
+
+        .box3,
+        .box4 {
+            color: pink;
+        }
+
+        h1>strong {
+            color: red;
+        }
+
+        .box6 {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #000;
+            color: red;
+        }
+
+        .box6:hover {
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <span>你好1</span>
+        <a><span>你好好1</span></a>
+        <h1><a><span>你好好2</span></a></h1>
+    </div>
+    <div class="box2">
+        <span>你好1</span>
+        <a><span>你好好1</span></a>
+        <span>你好1</span>
+    </div>
+    <div class="box5">
+        <a href="#">我是儿子</a>
+        <a href="#">我是儿子</a>
+        <p><a href="#">我是孙子</a></p>
+    </div>
+    <h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+    <h1>This is <em>really <strong>very</strong></em> important.</h1>
+    <div>
+        <span class="box3">你好啊</span>
+        <a class="box4">你好啊</a>
+    </div>
+    <div class="box6">
+        你好好a
+    </div>
+</body>
+
+</html>
