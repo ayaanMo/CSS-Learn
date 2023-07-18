@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>外边距合并_嵌套块元素塌陷</title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距合并_嵌套块元素塌陷</title>
+    <style>
         /* 
             嵌套块元素垂直外边距的塌陷
                 对于两个嵌套关系(父子关系)的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值
@@ -35,13 +35,13 @@
             margin-top: 100px;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <div class="father">
-            <div class="son"></div>
-        </div>
-        <div class="uncle"> </div>
-    </body>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="uncle"> </div>
+</body>
 
 </html>
